@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+</head>
+<style>
+table, th, td {
+  border: 1px solid black; 
+}
+
+td,th{
+	text-align: center;
+}
+
+</style>
+<body>
+
+	<h1 align="center">Planets of the Solar System</h1>
+	<table style="width:100%" align="center">
+ 		 <tr>
+ 		 	<th>Name</th>
+		    <th>Fahrenheit (°F)</th> 
+		    <th>Description</th>
+		    <th>Picture</th>
+		 </tr>
+
+		 <tr>
+		    <td>Mercury</td>
+		    <td><p id="num1">800</p>
+		    	<br> <button type="submit" onclick="Compute()">Calculate</button></td>
+		    <td>Experiences extreme temperature.</td>
+		    <td> <img src="https://solarsystem.nasa.gov/system/stellar_items/image_files/2_feature_1600x900_mercury.jpg" height="100" width="160"></td>
+		 </tr>
+
+		 <tr>
+		    <td>Venus</td>
+		    <td><p id="num2">900</p>
+		    	<br> <button type="submit" onclick="Compute()">Calculate</button></td>
+		    <td>The hottest planet of the Solar System.</td>
+		    <td> <img src="https://cdn.mos.cms.futurecdn.net/RifjtkFLBEFgzkZqWEh69P.jpg" height="100" width="160"></td>
+		 </tr>
+
+		 <tr>
+		    <td>Earth</td>
+		    <td><p id="num3">59</p>
+		    	<br> <button type="submit" onclick="Compute()">Calculate</button></td>
+		    <td>Our home and the place where living organisms can survive.</td>
+		    <td> <img src="https://images.theconversation.com/files/379516/original/file-20210119-15-tmyvf4.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C5991%2C3350&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" height="100" width="160"></td>
+		 </tr>
+
+		 <tr>
+		    <td>Mars</td>
+		    <td><p id="num4">-81</p>
+		    	<br> <button type="submit" onclick="Compute()">Calculate</button></td>
+		    <td>The red planet and a possible home to organisms in the future.</td>
+		    <td> <img src="https://images.theconversation.com/files/379516/original/file-20210119-15-tmyvf4.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C5991%2C3350&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" height="100" width="160"></td>
+		 </tr>
+
+		 <tr>
+		    <td>Jupiter</td>
+		    <td><p id="num5">-238</p>
+		    	<br> <button type="submit" onclick="Compute()">Calculate</button></td>
+		    <td>The bigest planet.</td>
+		    <td> <img src="https://cdn.mos.cms.futurecdn.net/Mza6ccKYF6WVrqZekTtJxN.jpg" height="100" width="160"></td>
+		 </tr>
+
+		 <tr>
+		    <td>Saturn</td>
+		    <td><p id="num6">-285</p>
+		    	<br> <button type="submit" onclick="Compute()">Calculate</button></td>
+			<td>Adorned with thousands of beautiful ringlets.</td>
+			<td> <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" height="100" width="160"></td>
+		 </tr>
+
+		 <tr>
+		    <td>Uranus</td>
+		    <td><p id="num7">-320</p>
+		    	<br> <button type="submit" onclick="Compute()">Calculate</button></td>
+			<td>Zero oxygen planet.</td>
+			<td> <img src="https://cdn.mos.cms.futurecdn.net/fniNDsYDMWq9dg4EiXM2UQ.jpg" height="100" width="160"></td>
+		 </tr>
+
+		 <tr>
+		    <td>Neptune</td>
+		    <td><p id="num8">-373</p>
+		    	<br> <button type="submit" onclick="Compute()">Calculate</button></td>
+			<td>Dark, cold and whipped by supersonic winds.</td>
+			<td> <img src="https://cdn.mos.cms.futurecdn.net/PezBzd9Fehsq9XWgWMauVV.jpg" height="100" width="160"></td>
+		 </tr>
+<p id="DT"></p>
+
+<script>
+	function showDateTime() {
+	const D = new Date();
+	document.getElementById('DT').innerHTML = D;
+}
+		const D = new Date();
+		document.getElementById('DT').innerHTML = D;
+function Compute(){
+    let num1 = document.getElementById("num1").textContent;
+    let celsius = (num1 - 32) * 5/9;
+
+    window.alert("The Value in °C is " + celsius + "°C");
+}
+function Compute(){
+    let num2 = document.getElementById("num2").textContent;
+    let celsius = (num2 - 32) * 5/9;
+
+    window.alert("The Value in °C is " + celsius + "°C");
+}
+function Compute(){
+    let num3 = document.getElementById("num3").textContent;
+    let celsius = (num3 - 32) * 5/9;
+
+    window.alert("The Value in °C is " + celsius + "°C");
+}
+function Compute(){
+    let num4 = document.getElementById("num4").textContent;
+    let celsius = (num4 - 32) * 5/9;
+
+    window.alert("The Value in °C is " + celsius + "°C");
+}
+function Compute(){
+    let num5 = document.getElementById("num5").textContent;
+    let celsius = (num5 - 32) * 5/9;
+
+    window.alert("The Value in °C is " + celsius + "°C");
+}
+function Compute(){
+    let num6 = document.getElementById("num6").textContent;
+    let celsius = (num6 - 32) * 5/9;
+
+
+    window.alert("The Value in °C is " + celsius + "°C");
+}
+
+function Compute(){
+    let num7 = document.getElementById("num6").textContent;
+    let celsius = (num7 - 32) * 5/9;
+
+
+    window.alert("The Value in °C is " + celsius + "°C");
+}
+function Compute(){
+    let num8 = document.getElementById("num6").textContent;
+    let celsius = (num8 - 32) * 5/9;
+
+
+    window.alert("The Value in °C is " + celsius + "°C");
+}
+		</script>
+
+
+<small>&copy;feuperio2023</small>
+
+
+</body>
+</html>
