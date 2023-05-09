@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Serif&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css">
+		img{
+			width: 150px;
+		}
+		#fig1,#fig2{
+			width: 500px;
+		}
+		H1{
+			background: lightyellow; color: black; text-align: center; font-family: Shadows Into Light ;
+		}
+
+		h2{
+			background: lightyellow; color: black; text-align: center;
+		}
+		
+
+	</style>
+	<title>Q4 Exercise 5</title>
+
+
+</head>
+<body>
+	<div class="container mt-3">
+
+	<p id="DT"></p>
+	<h1>LIGHT BULB</h1>
+	<p>Essentially, the lightbulb is a very thin filament of hard-to-melt metal – tungsten, usually – encased in a glass bulb filled with inert gases so that the filament doesn’t oxidise and disintegrate. The electricity causes the wire to glow and a portion of that energy is turned into light.</p>
+	<audio id="audio" src="electric-hum.mp3"></audio>
+	<button class="btn btn-warning" onmouseover="On()" onmouseout="Off()">ON</button>
+	<img src="turnoff.png" id="Bulb">
+
+	<h2>The Ohm's Law Explained</h2>
+	<img src="https://www.inchcalculator.com/wp-content/uploads/2022/09/power-formulas.png">
+	<p>Ohm’s principal discovery was that the amount of electric current through a metal conductor in a circuit is directly proportional to the voltage impressed across it, for any given temperature. Ohm expressed his discovery in the form of a simple equation, describing how voltage, current, and resistance interrelate: <kbd>Voltage(E) = Current(I) in a circuit, givern values of voltage (E) and resistance (R):</kbd></p>
+	<div class="row">
+		<div class="col-6">
+			<img src="fig2.png" id="fig2"><br>
+		</div>
+		<div class="col-6 my-5">
+			Enter Voltage(E):<input type="text" id="V" class="form-control"><br>
+			Enter Resistance(R):<input type="text" id="R" class="form-control"><br>
+			<input type="submit" value="compute" class="btn btn secondary" onclick="Compute()">
+			<p id="Output"></p>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		function On(){
+			document.getElementById('Bulb').src = "turnon.png";
+			document.getElementById('audio').play();
+
+		}
+
+		function Off(){
+			document.getElementById('Bulb').src = "turnoff.png"
+			document.getElementById('audio').pause();
+
+		}
+
+		function Compute(){
+
+
+			let Voltage = document.getElementById("V").value;
+			let Resistance = document.getElementById("R").value;
+			let Current = Voltage/Resistance;
+			window.alert("The Current(I) is: " + Current) ;
+
+
+			
+			
+		}
+
+	</script>
+	<p id="DT"></p>
+
+	<script>
+		function showDateTime() {
+	const D = new Date();
+	document.getElementById('DT').innerHTML = D;
+}
+		const D = new Date();
+		document.getElementById('DT').innerHTML = D;
+
+	</script>
+
+
+
+	<p>Sources:<br>
+	 <a href="https://www.bbc.com/future/article/20131101-how-does-a-lightbulb-work">How does a lightbulb work?</a>
+https://res.infoq.com/news/2021/04/Net6-Date-Time/en/headerimage/header-35-1618213727764.jpg
+https://www.inchcalculator.com/wp-content/uploads/2022/09/power-formulas.png</p>
+
+
+
+
+</body>
+</html>
